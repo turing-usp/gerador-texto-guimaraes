@@ -1,7 +1,6 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
-import time
 
 # Load and prepare text
 text = open("corpus/obras.txt", 'rb').read().decode(encoding='utf-8')
@@ -65,4 +64,3 @@ if st.button('Gerar texto'):
 
 with st.beta_expander("Sobre o projeto"):
     st.markdown("Todo o código do projeto está disponível no nosso repositório do [github](https://github.com/turing-usp/gerador-texto-guimaraes).")
-
