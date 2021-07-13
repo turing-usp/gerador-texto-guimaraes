@@ -44,12 +44,23 @@ def generate_text(model, start_string):
     return (start_string + text + '.')
 
 # Streamlit
-st.title('Gerador de texto de João Guimarães Rosa')
-st.write('Inteligência Artficial treinada em todas as obras de João Guimarães Rosa para escrever como o autor')
 
-input_text = st.text_input('Escreva o início da frase:')
+st.set_page_config(page_title= 'Gerador de Texto - Guimarães Rosa', page_icon=":eyeglasses:")
+
+st.title('Gerador de texto de João Guimarães Rosa')
+st.write('Inteligência Artficial treinada em todas as obras de João Guimarães Rosa para escrever como o autor.')
+
+input_text = st.text_input('(Opcional) Escreva o início da frase:')
 
 if st.button('Gerar texto'):
-    generated_text = generate_text(model, start_string = input_text)
-    st.write(generated_text)
 
+    if len(input_text) == 0:
+        generated_text = generate_text(model, start_string = ' ')
+        st.write(generated_text)
+    
+    else:
+        generated_text = generate_text(model, start_string = input_text)
+        st.write(generated_text)
+
+with st.beta_expander("Sobre o projeto"):
+    st.markdown("Todo o código do projeto está disponível no nosso repositório do [github](https://github.com/turing-usp/gerador-texto-guimaraes).")
