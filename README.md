@@ -4,7 +4,7 @@ Gerador de texto treinado nas obras de João Guimarães Rosa para escrever como 
 
 O site com resultado do projeto pode ser encontrado [aqui](http://gerador-texto-guimaraes.herokuapp.com/):
 
-[![Captura-de-Tela-2021-07-13-a-s-15-27-38.png](https://i.postimg.cc/PxVYPQmX/Captura-de-Tela-2021-07-13-a-s-15-27-38.png)](https://postimg.cc/S28JP8T3)
+[![gerador.png](https://i.postimg.cc/FKHs65LR/gerador.png)](https://postimg.cc/jDBbW1v0)
 
 ## Uso
 As dependências do projeto estão disponíveis em [requirements.txt](requirements.txt) e podem ser instaladas com o seguinte comando:
